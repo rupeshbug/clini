@@ -4,6 +4,9 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Enable class-based dark mode so dark: prefix responds to .dark on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
 }
@@ -12,9 +15,26 @@
   box-sizing: border-box;
 }
 
-html,
+/* ── Gradient canvas that glass panels sit on top of ───────── */
+html {
+  min-height: 100%;
+  background-color: #e8f3ec;
+  background-image:
+    radial-gradient(ellipse 70% 55% at 2% 2%,  rgba(79, 184, 178, 0.32) 0%, transparent 70%),
+    radial-gradient(ellipse 55% 65% at 98% 98%, rgba(47, 106, 74,  0.20) 0%, transparent 70%);
+  background-attachment: fixed;
+}
+
+html.dark {
+  background-color: #0a1418;
+  background-image:
+    radial-gradient(ellipse 70% 55% at 2% 2%,  rgba(79, 184, 178, 0.13) 0%, transparent 70%),
+    radial-gradient(ellipse 55% 65% at 98% 98%, rgba(47, 106, 74,  0.10) 0%, transparent 70%);
+}
+
 body,
 #app {
   min-height: 100%;
+  background: transparent;
 }
 
