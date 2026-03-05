@@ -217,7 +217,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         algorithm: isDark ? antdTheme.darkAlgorithm : antdTheme.defaultAlgorithm,
       }}
     >
-      <Layout className="min-h-screen">
+      <Layout className="h-screen overflow-hidden">
 
         {/* ── Glass Sidebar ────────────────────────────── */}
         <Sider
@@ -285,7 +285,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         </Sider>
 
         {/* ── Main area ────────────────────────────────── */}
-        <Layout className="flex flex-col min-h-screen">
+        <Layout className="flex flex-col h-full overflow-hidden">
 
           {/* ── Glass Header ─────────────────────────── */}
           <header className="
@@ -310,7 +310,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           </header>
 
           {/* Page content */}
-          <Content className="flex-1">
+          <Content className="flex-1 overflow-y-auto">
             {children}
           </Content>
 

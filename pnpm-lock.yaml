@@ -11,6 +11,9 @@ importers:
       '@rjsf/antd':
         specifier: ^6.3.1
         version: 6.3.1(@ant-design/icons@6.1.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@rjsf/core@6.3.1(@rjsf/utils@6.3.1(react@19.2.4))(react@19.2.4))(@rjsf/utils@6.3.1(react@19.2.4))(antd@6.3.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(dayjs@1.11.19)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@rjsf/utils':
+        specifier: ^6.3.1
+        version: 6.3.1(react@19.2.4)
       '@rjsf/validator-ajv8':
         specifier: ^6.3.1
         version: 6.3.1(@rjsf/utils@6.3.1(react@19.2.4))

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(test -f \"c:/Users/Lenovo/Desktop/healthcare/clini/src/routes/patients.tsx\")"
+    ]
+  }
+}
